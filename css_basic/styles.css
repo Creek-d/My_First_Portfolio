@@ -1,0 +1,94 @@
+/* Styles for the body container */
+header {
+margin-top: 20px; /* Adds space above the header */
+background-color: aliceblue;
+text-align: center;
+
+}
+/* Styles for the body container */
+body {
+    display: flex;               /* Makes the body a flexible container */
+    flex-direction: column;      /* Stacks its children vertically */
+    flex: auto;
+    background-image: url('bg.jpg');
+}
+
+/* Styles for the main container */
+main {
+    display: flex;               /* Makes the main a flexible container */
+    flex-direction: row;         /* Arranges its children (article and aside) horizontally */
+    flex: auto;
+    flex-grow: 1;                /* Allows the main section to expand and fill available space */
+    gap: 20px;                   /* Adds space between article and aside */
+    padding: 20px;               /* Adds some padding inside the main container */
+}
+
+/* Styles for the article section */
+article {
+    flex: 2;                     /* Makes article take up more space compared to aside */
+    overflow-y: auto;
+    background-color: blanchedalmond ;   /* Example background color */
+    padding: 15px;               /* Adds padding */
+    border: 1px solid #ddd;      /* Adds a border */
+    
+}
+
+/* Styles for the aside section */
+aside {
+    flex: 1;                     /* Makes aside smaller compared to article */
+    overflow-y: auto;
+    background-color: #e9ecef;   /* Example background color */
+    padding: 15px;               /* Adds padding */
+    border: 1px solid #ddd;      /* Adds a border */
+}
+/* Style the table */
+table {
+    width: 100%;                /* Make the table take full width of the container */
+    border-collapse: collapse;  /* Remove spacing between table cells */
+    margin: 20px 0;             /* Add space around the table */
+    font-size: 16px;            /* Font size for table text */
+    font-family: Arial, sans-serif; /* Font family */
+    text-align: left;           /* Align text to the left */
+}
+
+/* Style table header */
+thead th {
+    background-color: #4CAF50;  /* Background color for header */
+    color: white;               /* Text color for header */
+    padding: 10px;              /* Padding inside header cells */
+    border: 1px solid #ddd;     /* Border for header cells */
+}
+
+/* Style table rows */
+tbody tr {
+    border-bottom: 1px solid #ddd; /* Add border under each row */
+}
+
+/* Style table cells */
+tbody td {
+    padding: 10px;              /* Padding inside cells */
+    border: 1px solid #ddd;     /* Border for body cells */
+}
+
+/* Alternate row coloring */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;  /* Light gray for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;  /* White for even rows */
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: #f1f1f1;  /* Slightly darker gray on hover */
+    cursor: pointer;           /* Pointer cursor for hover effect */
+}
+
+footer {
+    
+    background: #333;            /* Example background color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
